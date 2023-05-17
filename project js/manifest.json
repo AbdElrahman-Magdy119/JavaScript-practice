@@ -1,0 +1,20 @@
+{
+    "name":"Abdo extention", 
+    "version":"1.0",  
+    "manifest_version":2,
+    "description":"This is new extention in chrome that delete comment from youtube",
+     "content_scripts":[
+        {
+            "matches":["https://*.facebook.com/*"],
+            "js":["Extention.js"]
+        }
+     ],
+     "browser_action": {
+        "default_popup": "Extention.html"
+     },
+     "icons": {
+        "16":"icon.jpg",
+        "48":"icon.jpg",
+        "128":"icon.jpg"
+     }
+}
